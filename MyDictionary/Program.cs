@@ -31,6 +31,19 @@ namespace MyDictionary
                 Console.WriteLine("{0}----->{1}\n", nameAge.Keys[i], nameAge.Values[i]);
             }
             Console.WriteLine("----------------\n");
+
+            nameAge.Remove("Simay");
+            nameAge.Remove("Engin");
+
+            Console.WriteLine("Dictionary içerisinde {0} key {1} value bulunmaktadır", nameAge.CountKeys, nameAge.CountValues);
+
+            Console.WriteLine("\n\nKey----->Value\n----------------");
+            for (int i = 0; i < nameAge.Keys.Length; i++)
+            {
+                Console.WriteLine("{0}----->{1}\n", nameAge.Keys[i], nameAge.Values[i]);
+            }
+            Console.WriteLine("----------------\n");
+
         }
     }
 }
